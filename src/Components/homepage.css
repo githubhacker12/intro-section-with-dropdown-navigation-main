@@ -1,0 +1,85 @@
+homepage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92vh;
+  padding: 0 5rem;
+  gap: 8rem;
+  flex-grow: 0;
+  display: relative;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  width: 450px;
+}
+
+.content h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+  padding-right: 4rem;
+}
+
+.content p {
+  padding-right: 3.3rem;
+  line-height: 2rem;
+  font-weight: 500;
+  color: hsl(0, 0%, 41%);
+  font-size: large;
+}
+
+.content .learn {
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid hsl(0, 0%, 8%);
+  font-weight: 700;
+}
+
+.content .learn:hover {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 8%);
+}
+
+.client {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 779px) {
+  homepage {
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 0;
+    gap: 3rem;
+  }
+
+  .content {
+    width: auto;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .content h1 {
+    padding: 0;
+    font-size: 2.3rem;
+  }
+
+  .content p {
+    padding: 0;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .client img {
+    width: 20%;
+  }
+}
